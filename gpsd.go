@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"math"
 	"net"
 	"time"
 )
@@ -313,9 +314,13 @@ func unmarshalReport(class string, bytes []byte) (interface{}, error) {
 
 	switch class {
 	case "TPV":
-		var r *TPVReport
+		var r TPVReport
+		r.Lat = math.NaN()
+		r.Lon = math.NaN()
+		r.Track = math.NaN()
+		r.Speed = math.NaN()
 		err = json.Unmarshal(bytes, &r)
-		return r, err
+		return &r, err
 	case "SKY":
 		var r *SKYReport
 		err = json.Unmarshal(bytes, &r)
