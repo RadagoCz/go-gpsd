@@ -144,18 +144,18 @@ type DEVICESReport struct {
 
 // DEVICEReport reports a state of a particular device
 type DEVICEReport struct {
-	Class string `json:"class"`
-	Path  string `json:"path"`
-	//Activated string `json:"activated"`
-	Flags  int    `json:"flags"`
-	Driver string `json:"driver"`
-	//Subtype   string  `json:"subtype"`
-	Bps      int     `json:"bps"`
-	Parity   string  `json:"parity"`
-	Stopbits string  `json:"stopbits"`
-	Native   int     `json:"native"`
-	Cycle    float64 `json:"cycle"`
-	//Mincycle  float64 `json:"mincycle"`
+	Class     string  `json:"class"`
+	Path      string  `json:"path"`
+	Activated string  `json:"activated"`
+	Flags     int     `json:"flags"`
+	Driver    string  `json:"driver"`
+	Subtype   string  `json:"subtype"`
+	Bps       int     `json:"bps"`
+	Parity    string  `json:"parity"`
+	Stopbits  int     `json:"stopbits"`
+	Native    int     `json:"native"`
+	Cycle     float64 `json:"cycle"`
+	Mincycle  float64 `json:"mincycle"`
 }
 
 // PPSReport is triggered on each pulse-per-second strobe from a device
