@@ -144,11 +144,11 @@ type DEVICESReport struct {
 
 // DEVICEReport reports a state of a particular device
 type DEVICEReport struct {
-	Class     string `json:"class"`
-	Path      string `json:"path"`
-	Activated string `json:"activated"`
-	Flags     int    `json:"flags"`
-	Driver    string `json:"driver"`
+	Class string `json:"class"`
+	Path  string `json:"path"`
+	//Activated string `json:"activated"`
+	Flags  int    `json:"flags"`
+	Driver string `json:"driver"`
 	//Subtype   string  `json:"subtype"`
 	Bps      int     `json:"bps"`
 	Parity   string  `json:"parity"`
