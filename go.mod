@@ -1,3 +1,3 @@
-module github.com/RadarTradeCz/go-gpsd
+module github.com/RadagoCz/go-gpsd
 
 go 1.18
