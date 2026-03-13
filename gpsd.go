@@ -319,7 +319,7 @@ func unmarshalReport(class string, bytes []byte) (interface{}, error) {
 		r.Lon = math.NaN()
 		r.Track = math.NaN()
 		r.Speed = math.NaN()
-		r.Epd = math.NaN()
+		r.Eph = math.NaN()
 		err = json.Unmarshal(bytes, &r)
 		return &r, err
 	case "SKY":
